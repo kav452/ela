@@ -2,7 +2,7 @@
 
 # The elasticsearch hostname for metadata writeback
 # Note that every rule can have its own elasticsearch host
-es_host: localhost
+es_host: es-log-es-http
 
 # The elasticsearch port
 es_port: 9200
@@ -22,13 +22,13 @@ buffer_time:
   minutes: 1
 
 # Optional URL prefix for elasticsearch
-#es_url_prefix: elasticsearch
+es_url_prefix: es
 
 # Connect with TLS to elasticsearch
-#use_ssl: True
+use_ssl: True
 
 # Verify TLS certificates
-#verify_certs: True
+verify_certs: True
 
 # GET request with body is the default option for Elasticsearch.
 # If it fails for some reason, you can pass 'GET', 'POST' or 'source'.
@@ -37,8 +37,8 @@ buffer_time:
 #es_send_get_body_as: GET
 
 # Option basic-auth username and password for elasticsearch
-#es_username: someusername
-#es_password: somepassword
+es_username: elastic
+es_password: 96j9lq4r47nvjtb6hcsktfkx
 
 # The index on es_host which is used for metadata storage
 # This can be a unmapped index, but it is recommended that you run
